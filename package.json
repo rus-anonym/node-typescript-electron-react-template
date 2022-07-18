@@ -1,0 +1,51 @@
+{
+    "name": "node-typescript-electron-react-template",
+    "version": "1.0.0",
+    "description": "Node + Typescript + Electron + React template",
+    "author": {
+        "name": "rus_anonym",
+        "email": "alexandrsemin2033@gmail.com"
+    },
+    "license": "MIT",
+    "productName": "node-typescript-electron-react-template",
+    "scripts": {
+        "start": "electron-forge start",
+        "package": "electron-forge package",
+        "make": "npm run make:win && npm run make:linux",
+        "make:win": "electron-forge make --platform=win32",
+        "make:linux": "electron-forge make --platform=linux",
+        "publish": "electron-forge publish",
+        "lint": "eslint ./src"
+    },
+    "main": ".webpack/main",
+    "config": {
+        "forge": "./config/forge.js"
+    },
+    "dependencies": {
+        "electron-squirrel-startup": "^1.0.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+        "@electron-forge/cli": "^6.0.0-beta.64",
+        "@electron-forge/maker-deb": "^6.0.0-beta.64",
+        "@electron-forge/maker-rpm": "^6.0.0-beta.64",
+        "@electron-forge/maker-squirrel": "^6.0.0-beta.64",
+        "@electron-forge/maker-zip": "^6.0.0-beta.64",
+        "@electron-forge/plugin-webpack": "^6.0.0-beta.64",
+        "@types/react": "^18.0.15",
+        "@types/react-dom": "^18.0.6",
+        "@typescript-eslint/eslint-plugin": "^5.30.6",
+        "@typescript-eslint/parser": "^5.30.6",
+        "@vercel/webpack-asset-relocator-loader": "^1.7.3",
+        "css-loader": "^6.7.1",
+        "electron": "^19.0.8",
+        "eslint": "^8.20.0",
+        "eslint-plugin-import": "^2.26.0",
+        "fork-ts-checker-webpack-plugin": "^7.2.12",
+        "node-loader": "^2.0.0",
+        "style-loader": "^3.3.1",
+        "ts-loader": "^9.3.1",
+        "typescript": "^4.7.4"
+    }
+}
